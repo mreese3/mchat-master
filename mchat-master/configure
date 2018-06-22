@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Simple shell script to setup build directory
+if [[ "$1" == "clean" ]] ; then
+	rm -rf build/
+else
+	git submodule update --init --recursive
+	mkdir build
+	cd build/
+	cmake ../
+fi

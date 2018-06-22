@@ -1,0 +1,19 @@
+Packages Required for building mchat:
+	-Fedora or EL:
+		dnf install gcc cmake make ncurses-devel glib2-devel
+		or
+		yum install gcc cmake make ncurses-devel glib2-devel
+	-Debian:
+		apt-get install build-essential cmake libglib2.0-dev \
+			libncurses5-dev
+	-MSys2/MinGW: pacman -S mingw-w64-ARCH-toolchain mingw-w64-ARCH-cmake \
+			mingw-w64-ARCH-glib2 glib2-devel ncurses-devel
+
+	-Optional packages for all:
+		-git - if you want to use git for checking out the code
+		-doxygen - if you want to build libmchat's documentation
+
+Windows Build Instructions:
+	1. Download the msys2 environment from www.msys2.org
+	2. Follow the instructions on how to update msys2 on their site
+
